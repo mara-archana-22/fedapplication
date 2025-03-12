@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT MANAGEMENT APPLICATION</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><strong>EventEase</strong></div>
+        <ul class="navlinks" id="navlinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#vendors">Vendors</a></li>
+            <li><a href="#booking">Book an Event</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="menutoggle" id="menutoggle">&#9776;</div>
+    </nav>
+
+    <header class="home" id="home">
+        <h1>Welcome to EventEase</h1>
+        <p>EventEase is a modern event management application designed to streamline appointment scheduling, vendor
+            coordination,
+            and guest management. Whether you’re organizing a corporate seminar, wedding, or private party, this app
+            ensures smooth
+            planning and execution.</p>
+    </header>
+
+    <section class="about" id="about">
+        <h1>About Us</h1>
+        <p>This is EventEase, the ultimate solution for effortless event management and appointment scheduling. Whether
+            you're
+            an event organizer, business, or vendor, our smart platform streamlines planning, automates bookings, and
+            ensures
+            seamless coordination—all in one place. Elevate your events with AI-powered scheduling, real-time
+            collaboration, and
+            hassle-free guest management, making every occasion a flawless success!</p>
+    </section>
+
+    <section id="services" class="services">
+        <h1>Our Services</h1>
+        <p>At EventEase, we offer a seamless and intelligent platform to simplify event planning and appointment
+            scheduling. Our
+            AI-powered tools ensure smooth coordination, effortless bookings, and stress-free execution—so you can focus
+            on creating
+            unforgettable experiences.</p>
+        <div class="service-container">
+            <div class="service">
+                <h3>Weddings💍</h3>
+                <p>Plan your dream wedding with personalized touches and seamless coordination.</p>
+            </div>
+            <div class="service">
+                <h3>Birthdays🎂</h3>
+                <p>Make every birthday special with themed celebrations and hassle-free planning.</p>
+            </div>
+            <div class="service">
+                <h3>Corporate Events🏢</h3>
+                <p>From conferences to product launches, we ensure a professional & impactful event.</p>
+            </div>
+            <div class="service">
+                <h3>Private Parties🎊</h3>
+                <p>Host exclusive gatherings with stylish decor, entertainment, and flawless execution.</p>
+            </div>
+            <div class="service">
+                <h3>Meetings & Appointments📅</h3>
+                <p>Schedule, manage, and streamline business appointments with ease.</p>
+            </div>
+            <div class="service">
+                <h3>Festivals & Cultural Events🎭</h3>
+                <p>Bring communities together with well-organized and vibrant celebrations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vendors" id="vendors">
+        <h1>Vendors – Your Trusted Event Partners</h1>
+        <p>At EventEase, we connect you with the best vendors to make your event flawless and stress-free. From stunning
+            decor to
+            world-class catering, our verified vendors ensure every detail is handled with perfection.</p>
+        <ul>
+            <li>🍽 Caterers & Food Services – From gourmet cuisines to customized menus, our caterers bring delicious
+                flavors to your
+                event.</li>
+            <li>🎶 Entertainment & Performers – Live bands, DJs, dancers, and more to keep your guests entertained</li>
+            <li>📸 Photography & Videography – Capture your special moments with professional photography & cinematic
+                videography.</li>
+            <li>🌸 Decor & Event Styling – Elegant themes, floral arrangements, and customized décor for a stunning
+                ambiance.</li>
+            <li>🏨 Venues & Banquets – Choose from a range of premium venues that fit your event’s style and size.</li>
+            <li>🚗 Logistics & Transportation – Hassle-free guest transportation and on-time deliveries for a smooth
+                event flow.</li>
+            <li>🎤 AV & Technical Services – Sound systems, lighting, and stage setups for a seamless event experience
+            </li>
+            <li>📝 Planners & Coordinators – Professional event managers who handle everything from planning to
+                execution.</li>
+        </ul>
+    </section>
+
+    <section class="booking" id="booking">
+        <h1>Book Your Event</h1>
+        <form id="formbooking">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="eventtype">Select Event Type:</label>
+            <select id="eventtype" name="eventtype" required>
+                <option value="wedding">💍 Weddings</option>
+                <option value="birthday">🎂 Birthdays</option>
+                <option value="corporate">🏢 Corporate Events</option>
+                <option value="private">🎊 Private Parties</option>
+                <option value="meeting">📅 Meetings & Appointments</option>
+                <option value="festival">🎭 Festivals & Cultural Events</option>
+            </select><br><br>
+
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="event_date" required><br><br>
+
+            <label for="venue">Preferred Venue:</label>
+            <input type="text" id="venue" name="venue" placeholder="Enter venue name or location" required><br><br>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+            <label for="message">Additional Details:</label>
+            <textarea id="message" name="message" rows="4"
+                placeholder="Tell us more about your event"></textarea><br><br>
+
+            <button type="submit">Book Event</button>
+        </form>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+        <p>Have questions or need assistance? Get in touch with us—we're here to help!</p>
+
+        <div class="contact-info">
+            📍 <strong>Address:</strong> 123 EventEase Street, Hyderabad, India
+            📞 <strong>Phone:</strong> 9876543210
+            ✉️ <strong>Email:</strong> support@eventease.com
+            🌐 <strong>Website:</strong> www.eventease.com
+        </div>
+
+        <h2>Feedback Form</h2>
+        <form id="formq">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
+                required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 EventEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
