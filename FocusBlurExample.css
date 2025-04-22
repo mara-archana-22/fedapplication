@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .text-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .text-input.focused {
+    border-color: dodgerblue;
+  }
+  
+  .hover-blur {
+    margin-top: 30px;
+    transition: filter 0.3s ease;
+  }
+  
+  .hover-blur:hover {
+    filter: blur(3px);
+  }
+  
